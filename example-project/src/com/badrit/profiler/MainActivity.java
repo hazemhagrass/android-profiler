@@ -13,11 +13,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		while(true){
-			Profiler prof = new Profiler();
-			Hashtable<String, Integer> cpuData = prof.getCpuStatistics();
-			Hashtable<String, Long> memData = prof.getMemoryStatistics();
-		}
+		Profiler prof = new Profiler();
+		Hashtable<String, Integer> cpuData = prof.getCpuStatistics();
+		Hashtable<String, Long> memData = prof.getMemoryStatistics();
 	}
 
 	@Override
