@@ -74,7 +74,7 @@ public class Profiler {
 				-1);
 		
 		data.put("level", level + "");
-		data.put("scale", level + "");
+		data.put("scale", scale + "");
 		
 		return data;
 	}
