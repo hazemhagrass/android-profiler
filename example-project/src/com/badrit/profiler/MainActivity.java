@@ -13,9 +13,10 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		Profiler prof = new Profiler();
+		Profiler prof = new Profiler(this);
 		Hashtable<String, Integer> cpuData = prof.getCpuStatistics();
 		Hashtable<String, Long> memData = prof.getMemoryStatistics();
+		Hashtable<String, String> batteryData = prof.getBatteryStatus();
 	}
 
 	@Override
