@@ -6,6 +6,7 @@ profiler lib to retrieve cpu, memory and battery info for android device
 Example Usage: 
 
 ```
+	//this -> main application activity
 	Profiler prof = new Profiler(this);
 	Hashtable<String, Integer> cpuData = prof.getCpuStatistics();
 	Hashtable<String, Long> memData = prof.getMemoryStatistics();
